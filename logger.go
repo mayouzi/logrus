@@ -44,6 +44,8 @@ type Logger struct {
 	entryPool sync.Pool
 	// Function to exit the application, defaults to `os.Exit()`
 	ExitFunc exitFunc
+	// CallerSkip caller skip number
+	CallerSkip int
 }
 
 type exitFunc func(int)
